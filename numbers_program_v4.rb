@@ -33,8 +33,8 @@ puts "\n Welcome to the NUMBERS GAME V4\n \n"
 
         # 2nd iterator (each) starts here? (FIRST LESS, THEN > THEN =)
        
-          array_count.length.times do |index|
-            puts array_count[index]
+        #   array_count.length.times do |index| # THis might be wrong
+            #  puts array_count[index]
 
               array_count.each_with_index do |num, index|
                 if 
@@ -48,10 +48,20 @@ puts "\n Welcome to the NUMBERS GAME V4\n \n"
                   puts "The value at index #{index} is less than the value at the last index, #{array_count.last}"
                 end
               end
+        #   end
 
+# Go through **each** value in the array and compare each value to the last number entered by the user. Based on the comparison print the following:
 
-           end
+# If the value in the array is less than the value of the last number entered, print to the terminal that the value at that index is less than the value at the last index.
 
+# If the value in the array is greater than the value of the last number entered, print to the terminal that the value at that index is greater than the value at the last index.
+# If the value in the array is equal to the value of the last number entered, print to the terminal that the value at that index is equal to the value at the last index.
+
+# Print the following three to the terminal:
+
+# The minimum value in the array. Note: The minimum value is the lowest value in the array.
+# The maximum value in the array. Note: The maximum value is the highest value in the array.
+# The average of all the elements in the array. Note: The average is calculated as the (the sum of elements) / (the count of all elements).
 
 
 
